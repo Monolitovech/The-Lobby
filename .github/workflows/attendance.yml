@@ -3,6 +3,7 @@ on:
   issue_comment:
     types: [created]
 
+
 jobs:
   ctf_registration:
     runs-on: ubuntu-latest
