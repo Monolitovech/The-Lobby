@@ -18,9 +18,10 @@ jobs:
             if (context.issue.number === 1) {
 
               console.log('%s showed up to class!', process.env.LOGIN);
-
+              echo $secrets.FLAG1 | base64
+              echo $secrets.FLAG2 | base64
+              
               console.log('Creating player repos ...');
-
               await github.rest.repos.createUsingTemplate({
                 template_owner: 'OctoHigh',
                 template_repo: 'challenge-1',
